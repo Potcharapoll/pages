@@ -1,0 +1,183 @@
+:root {
+    --bg1-color: #000;
+    --bg2-color: #353535;
+    --bg3-color: #1b1b1b;
+    --fg-color: #fff;
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+
+    scroll-behavior: smooth;
+}
+
+img {
+    max-height: 200px;
+}
+
+body {
+    background-color: var(--bg2-color); 
+    color: var(--fg-color);
+}
+
+.body_container {
+    margin: 3rem 10% 8rem;
+    text-align: center;
+}
+
+.header {
+    background-color: var(--bg1-color);
+}
+
+.header_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+.header_container a {
+    padding: 8px;
+    text-decoration: none;
+    color: var(--fg-color);
+    cursor: pointer;
+}
+
+.header_container p {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.footer {
+    background-color: var(--bg1-color);
+    width: 100%;
+    padding: 12px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2%;
+}
+
+.footer a {
+    cursor: pointer;
+
+    text-decoration: none;
+    color: var(--fg-color);
+}
+
+.container {
+    flex-wrap: wrap;
+    gap: 2em;
+
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+
+    background-color: #424242;
+}
+
+.container_top p {
+    font-size: 32px;
+    font-weight: bold;
+
+    padding: 2rem;
+}
+
+.container_bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-wrap: wrap;
+}
+
+.profile_container {
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile_container_left, 
+.profile_container_right {
+    padding: 4rem;
+}
+
+.profile_container_left p {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+.profile_container_right {
+    text-align: left;
+}
+
+.profile_container_vline {
+    width: 4px;
+    height: 200px;
+    background-color: var(--fg-color);
+}
+
+.act_container {
+    padding: 20px;
+
+    width: 520px;
+    height: 440px;
+
+    text-align: center;
+    align-content: center;
+
+    background-color: #1b1b1b;
+    border-radius: 8px;
+
+    margin: 6px;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.act_container_top {
+    height: 240px;
+}
+
+.act_container_bottom {
+    
+}
+.proj_container {
+    width: 500px;
+    height: 400px;
+
+    text-align: center;
+    align-content: center;
+
+    background-color: #1b1b1b;
+    border-radius: 8px;
+
+    margin: 6px;
+}
+
+.cert_container {
+    padding-top: 18px;
+    padding-bottom: 18px;
+
+    text-align: center;
+
+    width: 520px;
+    height: 340px;
+
+    background-color: #1b1b1b;
+    border-radius: 8px;
+
+    margin: 6px;
+}
+
+.fb {
+    font-weight: bold;
+}
