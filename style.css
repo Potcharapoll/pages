@@ -56,7 +56,6 @@ body {
 }
 
 .container {
-    flex-wrap: wrap;
     gap: 2em;
 
     padding: 2rem;
@@ -132,19 +131,30 @@ body {
     font-weight: bold;
 }
 
-@media only screen and (max-width: 480px) {
-   *                         { font-size: calc(16px * 0.60); } 
-   .fb                       { font-size: calc(20px * 0.60); }
-   .name                     { font-size: calc(32px * 0.60); }
-   .header_container p       { font-size: calc(18px * 0.60); }
-   .container_top p          { font-size: calc(32px * 0.60); }
-   .profile_container_left p { font-size: calc(48px * 0.60); }
+@media only screen and (max-width: 598px) {
+   *                         { font-size: calc(16px * 0.40); } 
+   .fb                       { font-size: calc(20px * 0.40); }
+   .name                     { font-size: calc(32px * 0.40); }
+   .header_container p       { font-size: calc(18px * 0.40); }
+   .container_top p          { font-size: calc(32px * 0.40); }
+   .profile_container_left p { font-size: calc(48px * 0.40); }
+   .box {
+       flex-direction: column;
+       text-align: center;
+   }
+   .box_right {
+    text-align: center;
+    padding: 0;
+   }
    .box_left img {
-       min-width: calc(320px * 0.60);
-       max-width: calc(320px * 0.60);
+       min-width: calc(320px * 0.40);
+       max-width: calc(320px * 0.40);
+   }
+   .profile_container {
+       flex-direction: column;
    }
    .profile_container_vline {
-       height: calc(100px * 0.60);
+       height: calc(100px * 0.40);
    }
 }
 
