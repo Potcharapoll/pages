@@ -40,7 +40,6 @@ body {
 }
 
 .header_container p {
-    font-size: 18px;
     font-weight: bold;
 }
 
@@ -68,14 +67,8 @@ body {
 }
 
 .container_top p {
-    font-size: 32px;
     font-weight: bold;
-
     padding: 2rem;
-}
-
-.container_bottom {
-    display: block;
 }
 
 .profile_container {
@@ -92,7 +85,6 @@ body {
 }
 
 .profile_container_left p {
-    font-size: 48px;
     font-weight: bold;
 }
 
@@ -102,13 +94,11 @@ body {
 
 .profile_container_vline {
     width: 2px;
-    height: 100px;
     background-color: var(--fg-color);
 }
 
 .box {
     padding: 20px;
-    min-height: 400px;
 
     align-content: center;
 
@@ -124,8 +114,6 @@ body {
 }
 
 .box_left img {
-    min-width: 320px;
-    max-width: 320px;
     border-radius: 8px;
 }
 
@@ -141,6 +129,69 @@ body {
 }
 
 .fb {
-    font-size: 20px;
     font-weight: bold;
+}
+
+@media only screen and (max-width: 480px) {
+   *                         { font-size: calc(16px * 0.60); } 
+   .fb                       { font-size: calc(20px * 0.60); }
+   .name                     { font-size: calc(32px * 0.60); }
+   .header_container p       { font-size: calc(18px * 0.60); }
+   .container_top p          { font-size: calc(32px * 0.60); }
+   .profile_container_left p { font-size: calc(48px * 0.60); }
+   .box_left img {
+       min-width: calc(320px * 0.60);
+       max-width: calc(320px * 0.60);
+   }
+   .profile_container_vline {
+       height: calc(100px * 0.60);
+   }
+}
+
+@media only screen and (max-width: 684px) {
+   *                         { font-size: calc(16px * 0.65); } 
+   .fb                       { font-size: calc(20px * 0.65); }
+   .name                     { font-size: calc(32px * 0.65); }
+   .header_container p       { font-size: calc(18px * 0.65); }
+   .container_top p          { font-size: calc(32px * 0.65); }
+   .profile_container_left p { font-size: calc(48px * 0.65); }
+   .box_left img {
+       min-width: calc(320px * 0.65);
+       max-width: calc(320px * 0.65);
+   }
+   .profile_container_vline {
+       height: calc(100px * 0.65);
+   }
+}
+
+@media only screen and (min-width: 684px) {
+   *                         { font-size: calc(16px * 0.75); } 
+   .fb                       { font-size: calc(20px * 0.75); }
+   .name                     { font-size: calc(32px * 0.75); }
+   .header_container p       { font-size: calc(18px * 0.75); }
+   .container_top p          { font-size: calc(32px * 0.75); }
+   .profile_container_left p { font-size: calc(48px * 0.75); }
+   .box_left img {
+       min-width: calc(320px * 0.75);
+       max-width: calc(320px * 0.75);
+   }
+   .profile_container_vline {
+       height: calc(100px * 0.75);
+   }
+}
+
+@media only screen and (min-width: 992px) {
+   *                         { font-size: 16px; } 
+   .fb                       { font-size: 20px; }
+   .name                     { font-size: 32px; }
+   .header_container p       { font-size: 18px; }
+   .container_top p          { font-size: 32px; }
+   .profile_container_left p { font-size: 48px; }
+   .box_left img {
+       min-width: 320px;
+       max-width: 320px;
+   }
+   .profile_container_vline {
+       height: 100px;
+   }
 }
