@@ -1,0 +1,11 @@
+* {
+    background-color: #111;
+    color: #eee;
+
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #eee;
+}
